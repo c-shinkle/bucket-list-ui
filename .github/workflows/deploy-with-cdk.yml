@@ -5,6 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
+      - name: change dir
+        run: cd cdk/
+
       - name: cdk diff
         uses: youyo/aws-cdk-github-actions@v1
         with:
