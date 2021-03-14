@@ -1,4 +1,4 @@
-name: learn-github-actions
+name: Build with Yarn
 on: push
 jobs:
   build:
