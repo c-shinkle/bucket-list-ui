@@ -2,8 +2,10 @@ name: "Build and Test"
 description: "Uses Yarn to install dependencies, build artifact and run tests."
 
 runs:
-  # using: "composite"
   steps:
-    - run: yarn install
-    - run: yarn build
-    - run: yarn test
+    - name: "Install, Build, Test"
+      run: |
+        yarn install
+        yarn build
+        yarn test
+      shell: bash
