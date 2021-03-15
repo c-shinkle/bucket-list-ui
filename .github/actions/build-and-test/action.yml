@@ -2,10 +2,8 @@ name: "Build and Test"
 description: 
 
 runs:
+  using: "composite"
   steps:
-    - uses: actions/setup-node@v1
-      with:
-        node-version: "15.x"
     - name: "Install, Build, Test"
       run: yarn install
       run: yarn build
