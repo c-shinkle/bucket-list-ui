@@ -9,13 +9,13 @@ jobs:
       - name: Checkout Code 
         uses: actions/checkout@v2
       - name: Build and Test
-        uses: ./github/actions/build-and-test
+        uses: ./.github/actions/build-and-test
 
-      - name: Install CDK Dependencies 
-        run: yarn install
-        shell: bash
-        working-directory: ./cdk
-
+      # - name: Install CDK Dependencies 
+      #   run: yarn install
+      #   shell: bash
+      #   working-directory: ./cdk
+# 
         # - name: cdk diff
         #   uses: youyo/aws-cdk-github-actions@v1
         #   working-directory: ./cdk
