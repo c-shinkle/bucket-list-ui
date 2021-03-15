@@ -6,6 +6,8 @@ jobs:
   deploy-cdk:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Code 
+        uses: actions/checkout@v2
       - name: Build and Test
         uses: ./github/actions/build-and-test
 
