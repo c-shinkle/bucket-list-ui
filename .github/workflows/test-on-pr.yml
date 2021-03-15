@@ -1,4 +1,4 @@
-name: Test on Pull Request
+name: "Test on Pull Request"
 on: 
   pull_request:
     branches: [ trunk ]
@@ -11,5 +11,5 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "15.x"
-      - uses: ./.github/actions/build-and-test
+      - uses: .github/actions/build-and-test
         
