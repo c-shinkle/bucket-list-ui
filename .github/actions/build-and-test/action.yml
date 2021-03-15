@@ -1,11 +1,12 @@
-name: Build and Test
+name: "Build and Test"
+description: 
 
 runs:
   steps:
     - uses: actions/setup-node@v1
       with:
-        node-version: '15.x'
-    - name: Install, Build, Test
+        node-version: "15.x"
+    - name: "Install, Build, Test"
       run: yarn install
       run: yarn build
       run: yarn test
