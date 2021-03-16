@@ -12,7 +12,9 @@ jobs:
           node-version: "15.x"
       - uses: ./.github/actions/build-and-test
 
-      - name: Install CDK Dependencies 
-        run: yarn install
-        shell: bash
-        working-directory: ./cdk
+      # - name: Install CDK Dependencies 
+      #   run: yarn install
+      #   shell: bash
+      #   working-directory: ./cdk
+      # I'm gonna circle around to tackling deployments later
+      # I don't have the sanity to debug github actions 
