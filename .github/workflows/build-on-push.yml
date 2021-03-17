@@ -1,5 +1,4 @@
 name: "Build and Test"
-description: "Uses Yarn to install dependencies, build artifact and run tests."
 
 on: push
 jobs:
