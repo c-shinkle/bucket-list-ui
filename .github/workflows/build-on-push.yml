@@ -1,17 +1,17 @@
 name: "Build and Test"
 description: "Uses Yarn to install dependencies, build artifact and run tests."
 
-on: [ push ]
+on: push
 jobs:
-  test-on-pr:
+  build-and-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: "15.x"
-          - name: "Install, Build, Test"
-      - run: |
+      - name: "Install, Build, Test"
+        run: |
           yarn install
           yarn build
           yarn test
