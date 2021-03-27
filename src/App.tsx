@@ -7,7 +7,7 @@ const App = () => {
       <header className="App-header">
         <img src={Memo} alt="Coming Soon!" />
         <p>
-          My Bucket List is under construction. Come back soon!
+          My Bucket List is under construction. Come back soon!!
         </p>
       </header>
     </div>
