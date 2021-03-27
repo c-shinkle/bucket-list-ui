@@ -1,17 +1,14 @@
-import React from 'react';
-import logo from './assets/logo.svg';
 import './App.css';
-import Link from './components/Link';
+import Memo from './assets/memo.png'
 
 const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={Memo} alt="Coming Soon!" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          My Bucket List is under construction. Come back soon!
         </p>
-        <Link />
       </header>
     </div>
   );
