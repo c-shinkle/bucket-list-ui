@@ -1,12 +1,20 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect'
 import App from './App';
 
 describe('App Layout', () => {
-  it('should render learn react link', () => {
+
+  it('should render memo image', () => {
     render(<App />);
-    const linkComponent = screen.getByRole('link');
-    expect(linkComponent).toHaveTextContent('Learn React');
+
+    const memo = screen.queryByRole('img');
+
+    expect(memo).toBeInTheDocument();
+  });
+
+  it('should render under construction text', () => {
+    render(<App />);
+    
+    screen.getByText('My Bucket List is under construction. Come back soon!');
   });
 });
