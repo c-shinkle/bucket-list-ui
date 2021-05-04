@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const Link = () => {
   return (
@@ -10,7 +10,7 @@ const Link = () => {
     >
       Learn React
     </a>
-  );
-};
+  )
+}
 
-export default Link;
+export default Link
