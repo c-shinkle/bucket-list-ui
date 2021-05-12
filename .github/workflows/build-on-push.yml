@@ -15,4 +15,3 @@ jobs:
           npm run build
           npm test
         shell: bash
-        

@@ -10,9 +10,9 @@ jobs:
         with:
           node-version: "15.x"
 
-      # - name: Install CDK Dependencies 
+      # - name: Install CDK Dependencies
       #   run: yarn install
       #   shell: bash
       #   working-directory: ./cdk
       # I'm gonna circle around to tackling deployments later
-      # I don't have the sanity to debug github actions 
+      # I don't have the sanity to debug github actions
